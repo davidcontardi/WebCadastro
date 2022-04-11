@@ -19,9 +19,9 @@ namespace WebCadastro.Migrations
 
             modelBuilder.Entity("WebCadastro.Models.Cadastro", b =>
                 {
-                    b.Property<int>("IdUsuario")
+                    b.Property<long>("IdUsuario")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("bigint");
 
                     b.Property<string>("CPF")
                         .IsRequired()
@@ -39,7 +39,6 @@ namespace WebCadastro.Migrations
                         .HasColumnName("Nome");
 
                     b.Property<string>("contato")
-                        .IsRequired()
                         .HasColumnType("varchar(20)")
                         .HasColumnName("contato");
 
@@ -63,7 +62,7 @@ namespace WebCadastro.Migrations
 
                     b.HasKey("IdUsuario");
 
-                    b.ToTable("Cadastros");
+                    b.ToTable("Cadastro");
                 });
 #pragma warning restore 612, 618
         }

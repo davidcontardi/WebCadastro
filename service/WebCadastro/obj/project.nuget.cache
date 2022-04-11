@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nA+YL3NzJ+6ldACzoKVua/a2nCBsMJtHKiex9m84rNKUKXJx1jQK5OP2kptHzH4tntqWiQ3M1S1x4PmnUV/zRg==",
+  "dgSpecHash": "6w8C8FsujMnr0SlDv9zx3F2lWXT4rs6JcLXRjsCzzlDrdbWtmm2/3dgXq9ulSpXVNZ7jQ70QWHtroKCByiGnYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\WebCadastro\\WebCadastro.csproj",
+  "projectFilePath": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\service\\WebCadastro\\WebCadastro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David Contardi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\David Contardi\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

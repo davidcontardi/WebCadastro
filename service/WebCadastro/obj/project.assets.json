@@ -7406,11 +7406,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\WebCadastro\\WebCadastro.csproj",
+      "projectUniqueName": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\service\\WebCadastro\\WebCadastro.csproj",
       "projectName": "WebCadastro",
-      "projectPath": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\WebCadastro\\WebCadastro.csproj",
+      "projectPath": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\service\\WebCadastro\\WebCadastro.csproj",
       "packagesPath": "C:\\Users\\David Contardi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\WebCadastro\\obj\\",
+      "outputPath": "C:\\Users\\David Contardi\\source\\repos\\WebCadastro\\service\\WebCadastro\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\David Contardi\\AppData\\Roaming\\NuGet\\NuGet.Config",

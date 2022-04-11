@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebCadastro.Migrations
 {
-    public partial class inicial : Migration
+    public partial class root : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,10 +12,10 @@ namespace WebCadastro.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Cadastros",
+                name: "Cadastro",
                 columns: table => new
                 {
-                    IdUsuario = table.Column<int>(type: "int", nullable: false)
+                    IdUsuario = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     email = table.Column<string>(type: "varchar(60)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -30,12 +30,12 @@ namespace WebCadastro.Migrations
                     size = table.Column<string>(type: "varchar(6)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     datadeCriacao = table.Column<DateTime>(type: "datetime", nullable: false),
-                    contato = table.Column<string>(type: "varchar(20)", nullable: false)
+                    contato = table.Column<string>(type: "varchar(20)", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cadastros", x => x.IdUsuario);
+                    table.PrimaryKey("PK_Cadastro", x => x.IdUsuario);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
         }
@@ -43,7 +43,7 @@ namespace WebCadastro.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Cadastros");
+                name: "Cadastro");
         }
     }
 }

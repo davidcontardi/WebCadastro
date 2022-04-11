@@ -9,7 +9,7 @@ namespace WebCadastro.Models
 
         }
 
-        public DbSet<Cadastro> Cadastros { get; set; }
+        public DbSet<Cadastro> Cadastro { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

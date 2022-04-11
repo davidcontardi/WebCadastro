@@ -1,35 +1,34 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MySqlConnector;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Linq;
+using WebCadastro.Models;
+using WebCadastro.Posts;
 
 namespace WebCadastro.Controllers
 {
-    public class LoginController : Controller
+    [Route("api/login")]
+    [ApiController]
+    public class LoginController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly AppDbContext _db;
+
+        public LoginController(AppDbContext db)
         {
-            return View();
+            _db = db;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Logar(string Email, string senha)
+        public IActionResult FazerLogin(Login login)
         {
-            MySqlConnection mySqlConnection = new MySqlConnection("server=localhost;database=cadastrologin; user=root; password=David41615323");
-            await mySqlConnection.OpenAsync();
+            var entrar = _db.Cadastro.FirstOrDefault(a => a.Email == login.Email && a.senha == login.senha);
 
-            MySqlCommand mySqlCommand = mySqlConnection.CreateCommand();
-            mySqlCommand.CommandText = $"SELECT * FROM cadastro WHERE email = '{Email}' AND senha = '{senha}'";
-
-            MySqlDataReader reader = mySqlCommand.ExecuteReader();
-
-            if(await reader.ReadAsync())
+            if(entrar == null)
             {
-                return Json(new { Msg = "Usuário cadastrado com sucesso!" });
-
-
+                return Unauthorized("Usuário não existe");
             }
-              
-            return Json(new { }); 
+
+            return Ok("Ok");
         }
     }
 }
