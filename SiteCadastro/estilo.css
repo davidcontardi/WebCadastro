@@ -1,0 +1,115 @@
+@charset "UTF-8";
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+header{
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+body{
+    font-family: roboto;
+    background-color: #FAFAFA;
+    margin: 4px;
+    display: block;
+}
+section{
+    display: block;
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 6px;
+    margin: auto;
+}
+.titulo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Cadastre-se{
+    padding: 0 50px;
+    font: 14px
+}
+.Entrar{
+    padding: 0 50px;
+    font: 14px;
+}
+.acesso{
+    margin:22px 0;
+    height:22px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+.left{
+    display: inline-block;
+    height: 1px;
+    width: 50%;
+    background-color: black;
+}
+.right{
+    display: inline-block;
+    height: 1px;
+    width: 50%;
+    background-color: black;
+}
+label{
+    white-space: nowrap;
+    padding: 0 27px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.facebook{
+    margin-right: 25px;    
+}
+.google{
+    
+
+}
+.apple{
+    margin-left: 25px;
+}
+.form-cadastro{
+    display: block;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 40px;
+    border-radius: 22px;
+}
+.emailC{
+    display: block;
+    float: left;
+    height: 25px;
+    margin-top: 10px;;
+    width: 100%;
+}
+.senhaC{
+    display: block;
+    float: left;
+    height: 25px;
+    margin-top: 10px;;
+    width: 100%;
+}
+.cpfC{
+    display: block;
+    float: left;
+    height: 25px;
+    margin-top: 10px;;
+    width: 100%;
+}
