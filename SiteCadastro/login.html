@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar no Droper</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/angular/angular.js"></script>
+
 </head>
 <body>
     <header>
@@ -14,10 +16,10 @@
 
         <div class="titulo">
             <div class="Cadastre-se">
-                Cadastre-se
+                <a href="cadastro.html">Cadastre-se</a> 
             </div>
             <div class="Entrar">
-                <a href="login.html">Entrar</a> 
+                Entrar 
             </div>
         </div>
     </header>
@@ -28,7 +30,7 @@
 
                 <div class="facebook">
                 <picture>
-                    <source media="(max-width: 670px)" srcset="img/miniFacebook.png">
+                    <source media="(max-width: 670px)" srcset="img/FacebookIcon.png">
                     <img src="img/face.png" alt="Logo Facebook">
 
                 </picture>  
@@ -36,7 +38,7 @@
 
                 <div class="google">
                     <picture>
-                        <source media="(max-width: 670px)" srcset="img/miniGoogle.png">
+                        <source media="(max-width: 670px)" srcset="img/GoogleIcon.png">
                         <img src="img/googlee.png" alt="logo google">
                     </picture>    
                 </div>
@@ -53,9 +55,7 @@
             
             <div style="height: 155px;">
                 <input class="emailC" type="text" name="txtEmailCadastro" id="txtEmailCadastro" placeholder="Email" ><br>
-                <input class="senhaC" type="password" name="txtSenhaCadastro" id="txtSenhaCadastro" placeholder="Senha"><br>
-                <input class="cpfC" type="number" name="txtCpfCadastro" id="txtCpfCadastro" placeholder="CPF"><br><br><br><br><br><br>
-                
+                <input class="senhaC" type="password" name="txtSenhaCadastro" id="txtSenhaCadastro" placeholder="Senha"><br>                
             </div>  
             <div class="termosdeUso">
                 <input type="checkbox" name="boxTermos" id="boxTermos">
@@ -69,7 +69,7 @@
             </div>
 
             <div class="logarConta">
-                <p>Já tem uma conta? <a href="login.html">Clique aqui para logar!</a></p>
+                <p>Já tem uma conta? <a href="">Clique aqui para logar!</a></p>
             </div>
             
         </section>
